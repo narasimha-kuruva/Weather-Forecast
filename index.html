@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="location-container">
+            <img src="#" id="loc-icon"/>
+            <p class="para" id="countryId"></p>
+            <p class="para" id="state"></p>
+            <p class="para" id="localName"></p>
+        </div>
+        <div class="days-container">
+            <div class="btn" id="day-1">
+                <p class="weekname" id="day-name">monday</p>
+                <img src="#"  id="forcast-img" />
+                <div class="min-max-values">
+                    <p class="temp-values" id="min-Temp"></p>
+                <p class="temp-values" id="max-Temp"></p>
+                </div>
+                
+
+            </div>
+            <div class="btn" id="day-2">
+                <p class="weekname" id="day-name">monday</p>
+                <img src="#"  id="forcast-img" />
+                <div class="min-max-values">
+                    <p class="temp-values" id="min-Temp"></p>
+                    <p class="temp-values" id="max-Temp"></p>
+                </div>
+            </div>
+            <div class="btn" id="day-3">
+                <p class="weekname" id="day-name">monday</p>
+                <img src="#"  id="forcast-img" />
+                <div class="min-max-values">
+                    <p class="temp-values" id="min-Temp"></p>
+                    <p class="temp-values" id="max-Temp"></p>
+                </div>
+            </div>
+            <div class="btn" id="day-4">
+                <p class="weekname" id="day-name">monday</p>
+                <img src="#"  id="forcast-img" />
+                <div class="min-max-values">
+                    <p class="temp-values" id="min-Temp"></p>
+                    <p class="temp-values" id="max-Temp"></p>
+                </div>
+            </div>
+            <div class="btn" id="day-5">
+                <p class="weekname" id="day-name">monday</p>
+                <img src="#"  id="forcast-img" />
+                <div class="min-max-values">
+                    <p class="temp-values" id="min-Temp"></p>
+                    <p class="temp-values" id="max-Temp"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="box-1" id="weather-details">
+            <div class="inner-1" id="heat">
+                <p class="day-name" id="day-name">today</p>
+                <div class="tempDiv">
+                    <img src="#" id="heat-icon">
+                    <p class="temp" id="fHeat">80^0</p>
+                </div>
+                <div class="min-max-align">
+                    <div class="min-container">
+                        <p class="min-max-heading">Min :</p>
+                        <p class="min" id="min-fHeat">50</p>
+                    </div>
+                    <div class="max-container">
+                        <p class="min-max-heading">Max :</p>
+                        <p class="max" id="max-fHeat">80</p>
+                    </div> 
+                </div>
+                
+            </div>
+            <div class="inner-2" id="celcius">
+                <div class="tempDiv">
+                    <img src="#" id="celcius-icon">
+                <p class="temp" id="cdegree">78</p>
+                </div>
+                <div class="min-max-align">
+                    <div class="min-container">
+                        <p class="min-max-heading">Min :</p>
+                        <p class="min" id="min-degree">50</p>
+                    </div>
+                    <div class="max-container">
+                        <p class="min-max-heading">Max :</p>
+                        <p class="max" id="max-degree">80</p>
+                    </div> 
+                </div>
+                <p class="txt" id="txtMessage">ThunderStorm is there</p>
+            </div>
+        </div>
+        <div class="box-2" id="weather-day">
+            <h3 class="day">Day</h3>
+            <div class="day-night">
+                <p class="txt-1">Icon Phrase :</p>
+                <p class="txt" id="day-icon-phrase">ThunderStorm</p>
+            </div>
+            <div class="day-night">
+                <p class="txt-1">Precipitation Type :</p>
+                <p class="txt" id="day-precipitation-type">rainy</p>
+            </div>
+            <div class="day-night">
+                <p class="txt-1">Precipitation Intencity : </p>
+                <p class="txt" id="day-precipitation-intencity">Moderate</p>
+            </div>
+        </div>
+        <div class="box-3" id="weather-night">
+            <h3 class="night">Night</h3>
+            <div class="day-night">
+                <p class="txt-1">Icon Phrase :</p>
+                <p class="txt" id="day-icon-phrase">cloudy</p>
+            </div>
+            <div class="day-night">
+                <p class="txt-1">Precipitation Type :</p>
+                <p class="txt" id="day-precipitation-type">rainy</p>
+            </div>
+            <div class="day-night">
+                <p class="txt-1">Precipitation Intencity : </p>
+                <p class="txt" id="day-precipitation-intencity">light</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+</body>
+</html>
